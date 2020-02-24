@@ -2,7 +2,7 @@
 KAISE KSRobot KSR030 micro:bit Robot Kit 10 Axis Dog Kit\
 KSR030 10軸 機械狗版本\
 [http://ksr030.kaise.com.tw](http://ksr030.kaise.com.tw)\
-![image](images/KSR030-Dog.png)
+![image](images/KSR030-Dog.jpg)
 
 ## User Guide 
 ![image](images/block.png)
