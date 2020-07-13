@@ -219,6 +219,7 @@ namespace KSR030_Dog {
                 break;
 
             case DogState.run:
+                
 
                 break;
 
