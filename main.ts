@@ -99,7 +99,7 @@ namespace KSR030_Dog {
         //normal 0.5ms~2.4ms
         //SG90 0.5ms~2.0ms
 
-        KSR030.Servo(DogServoNum, degree)
+        KSR030.Servo(channel, degree)
 
         //let pulselen = servo_map(degree, 0, 180, SERVOMIN, SERVOMAX);
         //let pulselen = servo_map(degree, 0, 180, servomin, servomax);
