@@ -60,7 +60,7 @@ namespace KSR030_Dog {
         run = 11,
         //% blockId="Wagging_tail" block="friendly"
         friendly = 12
-        
+
 
     }
 
@@ -98,8 +98,7 @@ namespace KSR030_Dog {
         //let pulselen = servo_timing*4096/20000
         //normal 0.5ms~2.4ms
         //SG90 0.5ms~2.0ms
-        if (!initialized)
-        {
+        if (!initialized) {
             KSR030.Servo(KSR030.ServoNum.S0, 90)
             initialized = true;
         }
@@ -130,6 +129,19 @@ namespace KSR030_Dog {
                 DogServo(KSR030_Dog.DogServoNum.R_Forearm, 90)
                 basic.pause(100)
                 break;
+
+            case DogState.walk:
+
+                break;
+
+            case DogState.Leftward:
+
+                break;
+
+            case DogState.Rightward:
+
+                break;
+
             case DogState.stand_up:
                 DogServo(KSR030_Dog.DogServoNum.Head, 90)
                 DogServo(KSR030_Dog.DogServoNum.Tail, 90)
@@ -145,34 +157,7 @@ namespace KSR030_Dog {
                 DogServo(KSR030_Dog.DogServoNum.R_Forearm, 45)
                 basic.pause(100)
                 break;
-            case DogState.nodding:
-                DogServo(KSR030_Dog.DogServoNum.Head, 90)
-                basic.pause(500)
-                DogServo(KSR030_Dog.DogServoNum.Head, 30)
-                basic.pause(500)
-                DogServo(KSR030_Dog.DogServoNum.Head, 90)
-                break;
-            case DogState.Wagging_tail:
-                DogServo(KSR030_Dog.DogServoNum.Tail, 120)
-                basic.pause(300)
-                DogServo(KSR030_Dog.DogServoNum.Tail, 60)
-                basic.pause(300)
-                break;
-            case DogState.get_down:
-                DogServo(KSR030_Dog.DogServoNum.Head, 90)
-                DogServo(KSR030_Dog.DogServoNum.Tail, 90)
-                basic.pause(100)
-                DogServo(KSR030_Dog.DogServoNum.L_Upper_Arm, 10)
-                DogServo(KSR030_Dog.DogServoNum.R_Upper_Arm, 170)
-                DogServo(KSR030_Dog.DogServoNum.L_Upper_Thigh, 170)
-                DogServo(KSR030_Dog.DogServoNum.R_Upper_Thigh, 10)
-                basic.pause(100)
-                DogServo(KSR030_Dog.DogServoNum.L_Forearm, 90)
-                DogServo(KSR030_Dog.DogServoNum.R_Forearm, 90)
-                DogServo(KSR030_Dog.DogServoNum.L_Lower_Thigh, 90)
-                DogServo(KSR030_Dog.DogServoNum.R_Lower_Thigh, 90)
-                basic.pause(100)
-                break;
+
             case DogState.sit_down:
                 DogServo(KSR030_Dog.DogServoNum.Head, 90)
                 DogServo(KSR030_Dog.DogServoNum.Tail, 90)
@@ -189,6 +174,38 @@ namespace KSR030_Dog {
                 DogServo(KSR030_Dog.DogServoNum.R_Lower_Thigh, 90)
                 basic.pause(100)
                 break;
+
+            case DogState.get_down:
+                DogServo(KSR030_Dog.DogServoNum.Head, 90)
+                DogServo(KSR030_Dog.DogServoNum.Tail, 90)
+                basic.pause(100)
+                DogServo(KSR030_Dog.DogServoNum.L_Upper_Arm, 10)
+                DogServo(KSR030_Dog.DogServoNum.R_Upper_Arm, 170)
+                DogServo(KSR030_Dog.DogServoNum.L_Upper_Thigh, 170)
+                DogServo(KSR030_Dog.DogServoNum.R_Upper_Thigh, 10)
+                basic.pause(100)
+                DogServo(KSR030_Dog.DogServoNum.L_Forearm, 90)
+                DogServo(KSR030_Dog.DogServoNum.R_Forearm, 90)
+                DogServo(KSR030_Dog.DogServoNum.L_Lower_Thigh, 90)
+                DogServo(KSR030_Dog.DogServoNum.R_Lower_Thigh, 90)
+                basic.pause(100)
+                break;
+
+            case DogState.nodding:
+                DogServo(KSR030_Dog.DogServoNum.Head, 90)
+                basic.pause(500)
+                DogServo(KSR030_Dog.DogServoNum.Head, 30)
+                basic.pause(500)
+                DogServo(KSR030_Dog.DogServoNum.Head, 90)
+                break;
+
+            case DogState.Wagging_tail:
+                DogServo(KSR030_Dog.DogServoNum.Tail, 120)
+                basic.pause(300)
+                DogServo(KSR030_Dog.DogServoNum.Tail, 60)
+                basic.pause(300)
+                break;
+
             case DogState.shake_hands:
                 DogServo(KSR030_Dog.DogServoNum.L_Forearm, 135)
                 basic.pause(300)
@@ -200,6 +217,11 @@ namespace KSR030_Dog {
                 basic.pause(500)
                 DogServo(KSR030_Dog.DogServoNum.L_Upper_Arm, 60)
                 break;
+
+            case DogState.run:
+
+                break;
+
             case DogState.friendly:
                 DogServo(KSR030_Dog.DogServoNum.Head, 60)
                 DogServo(KSR030_Dog.DogServoNum.Tail, 90)
