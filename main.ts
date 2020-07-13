@@ -131,6 +131,32 @@ namespace KSR030_Dog {
                 break;
 
             case DogState.walk:
+                DogServo(KSR030_Dog.DogServoNum.L_Lower_Thigh, 40)
+                DogServo(KSR030_Dog.DogServoNum.L_Forearm, 140)
+                basic.pause(50)
+                DogServo(KSR030_Dog.DogServoNum.L_Upper_Thigh, 80)
+                DogServo(KSR030_Dog.DogServoNum.L_Lower_Thigh, 70)
+                DogServo(KSR030_Dog.DogServoNum.L_Upper_Arm, 100)
+                DogServo(KSR030_Dog.DogServoNum.L_Forearm, 125)
+                DogServo(KSR030_Dog.DogServoNum.R_Upper_Thigh, 75)
+                DogServo(KSR030_Dog.DogServoNum.R_Lower_Thigh, 90)
+                DogServo(KSR030_Dog.DogServoNum.R_Upper_Arm, 60)
+                DogServo(KSR030_Dog.DogServoNum.R_Forearm, 45)
+                basic.pause(700)
+                DogServo(KSR030_Dog.DogServoNum.R_Lower_Thigh, 140)
+                DogServo(KSR030_Dog.DogServoNum.R_Forearm, 40)
+                basic.pause(50)
+                DogServo(KSR030_Dog.DogServoNum.R_Upper_Thigh, 100)
+                DogServo(KSR030_Dog.DogServoNum.R_Lower_Thigh, 110)
+                DogServo(KSR030_Dog.DogServoNum.R_Upper_Arm, 80)
+                DogServo(KSR030_Dog.DogServoNum.R_Forearm, 55)
+                DogServo(KSR030_Dog.DogServoNum.L_Upper_Thigh, 105)
+                DogServo(KSR030_Dog.DogServoNum.L_Lower_Thigh, 90)
+                DogServo(KSR030_Dog.DogServoNum.L_Upper_Arm, 120)
+                DogServo(KSR030_Dog.DogServoNum.L_Forearm, 135)
+                basic.pause(700)
+
+
 
                 break;
 
@@ -219,7 +245,7 @@ namespace KSR030_Dog {
                 break;
 
             case DogState.run:
-                
+
 
                 break;
 
