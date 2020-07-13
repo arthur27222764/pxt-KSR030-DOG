@@ -98,12 +98,11 @@ namespace KSR030_Dog {
         //let pulselen = servo_timing*4096/20000
         //normal 0.5ms~2.4ms
         //SG90 0.5ms~2.0ms
+        
 
-        KSR030.Servo(channel, degree)
-
-        //let pulselen = servo_map(degree, 0, 180, SERVOMIN, SERVOMAX);
+        let pulselen = servo_map(degree, 0, 180, SERVOMIN, SERVOMAX);
         //let pulselen = servo_map(degree, 0, 180, servomin, servomax);
-        //setPwm(channel, 0, pulselen);
+        setPwm(channel, 0, pulselen);
 
     }
     //% blockId=KSR030_Dog_Action
