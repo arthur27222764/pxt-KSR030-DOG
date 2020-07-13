@@ -250,7 +250,6 @@ namespace KSR030_Dog {
                 basic.pause(700)
                 break;
 
-
         }
     }
 
