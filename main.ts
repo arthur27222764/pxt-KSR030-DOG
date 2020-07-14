@@ -36,30 +36,28 @@ namespace KSR030_Dog {
     }
 
     export enum DogState {
-        //% blockId="Wagging_tail" block="calibration"
+        //% blockId="calibration_id" block="calibration"
         calibration = 1,
-        //% blockId="Forward" block="walk"
+        //% blockId="walk_id" block="walk"
         walk = 2,
-        //% blockId="Go_Left" block="Leftward"
+        //% blockId="Leftward_id" block="Leftward"
         Leftward = 3,
-        //% blockId="GO_Right" block="Rightward"
+        //% blockId="Rightward_id" block="Rightward"
         Rightward = 4,
-        //% blockId="Backward" block="stand_up"
+        //% blockId="stand_up_id" block="stand_up"
         stand_up = 5,
-        //% blockId="Leftward" block="sit_down"
+        //% blockId="sit_down_id" block="sit_down"
         sit_down = 6,
-        //% blockId="Rightward" block="get_down"
+        //% blockId="get_down_id" block="get_down"
         get_down = 7,
-        //% blockId="Stop" block="nodding"
+        //% blockId="nodding_id" block="nodding"
         nodding = 8,
-        //% blockId="Wagging_tail" block="Wagging_tail"
+        //% blockId="Wagging_tail_id" block="Wagging_tail"
         Wagging_tail = 9,
-        //% blockId="Wagging_tail" block="shake_hands"
+        //% blockId="shake_hands_id" block="shake_hands"
         shake_hands = 10,
-        //% blockId="Forward" block="run"
-        run = 11,
-        //% blockId="Wagging_tail" block="friendly"
-        friendly = 12
+        //% blockId="friendly_id" block="friendly"
+        friendly = 11
 
 
     }
